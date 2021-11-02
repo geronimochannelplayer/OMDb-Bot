@@ -98,6 +98,7 @@ def movie(_, message):
 🔆 𝖲𝗍𝖺𝗋𝗌 : <b>{movie_info['actors']}</b>
 
 🗒 𝖯𝗅𝗈𝗍 : <code>{movie_info['plot']}</code>"""
+                
                 if poster.startswith("https"):
                                                 m = await message.reply_text("𝖥𝗂𝗇𝖽𝗂𝗇𝗀 𝖣𝖾𝗍𝖺𝗂𝗅𝗌..")
                                                 await message.reply_photo(photo=my_poster.replace("_SX300","_"), caption=my_text, reply_markup=InlineKeyboardMarkup(buttons))
