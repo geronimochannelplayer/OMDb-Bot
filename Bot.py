@@ -99,18 +99,7 @@ def movie(_, message):
 
 🗒 𝖯𝗅𝗈𝗍 : <code>{movie_info['plot']}</code>"""
                 
-                if poster.startswith("https"):
-                                                m = await message.reply_text("𝖥𝗂𝗇𝖽𝗂𝗇𝗀 𝖣𝖾𝗍𝖺𝗂𝗅𝗌..")
-                                                await message.reply_photo(photo=my_poster.replace("_SX300","_"), caption=my_text, reply_markup=InlineKeyboardMarkup(buttons))
-                                                await m.delete()
-                  else:
-                       m = await message.reply_text("𝖲𝗈𝗋𝗋𝗒,\n𝖨 𝖢𝖺𝗇'𝗍 𝖥𝗂𝗇𝖽 𝖯𝗈𝗌𝗍𝖾𝗋𝗌.\n𝖲𝖾𝗇𝖽𝗂𝗇𝗀 𝖠𝗏𝖺𝗂𝗅𝖺𝖻𝗅𝖾 𝖣𝖾𝗍𝖺𝗂𝗅𝗌..")
-                       await message.reply_text(text=my_text, reply_markup=InlineKeyboardMarkup(buttons))
-                       await sleep(4)
-                       await m.delete()
-    else:
-        omdbbuttons=[[InlineKeyboardButton('🔍 𝖲𝖾𝖺𝗋𝖼𝗁 𝖮𝗇 𝖦𝗈𝗈𝗀𝗅𝖾.', url=f'https://google.com/search?q={movie_name.replace(" ","+")}')]]
-        await message.reply_text(text="𝖢𝗈𝗎𝗅𝖽𝗇'𝗍 𝖥𝖾𝗍𝖼𝗁 𝖣𝖾𝗍𝖺𝗂𝗅𝗌\n𝖳𝗋𝗒 𝖳𝗈 𝖢𝗁𝖾𝖼𝗄 𝖸𝗈𝗎𝗋 𝖲𝗉𝖾𝗅𝗅𝗂𝗇𝗀.", reply_markup=InlineKeyboardMarkup(omdbbuttons))
+                await message.reply_photo(photo=poster.replace("_SX300","_"), caption=text
 
 
 #=======================================================================
