@@ -1,31 +1,31 @@
 {
     "name": "OMDbBot",
-    "description": "Simple Telegram Bot To Get Info About Movies Using OMDb",
-    "logo": "https://telegra.ph//file/1fd0f08fc291a741de530.jpg",
+    "description": "Kind of a filter bot where you don't have to add filters manually.",
+    "logo": "https://telegra.ph/file/71aaa621508cd696ab538.jpg",
     "keywords": [
-        "telegram",
-        "pyrogram",
-        "telegram-bot",
-        "ArunSince2005"
+        "Auto",
+        "Filter",
+        "Telegram Bot",
+        "TroJanzHEX"
     ],
+    "website": "https://TroJanzHEX.me",
     "repository": "https://github.com/geronimochannelplayer/OMDb-Bot",
-    "website": "t.me/ArunSince2005",
-    "success_url": "https://t.me/Arun_TG",
+    "success_url": "https://telegram.dog/TroJanzHEX",
     "env": {
-        "API_HASH": {
-            "description": "You API HASH from my.telegram.org",
-            "value": ""
-        },
-        "API_ID": {
-            "description": "You API ID from my.telegram.org",
-            "value": ""
-        },
         "BOT_TOKEN": {
-            "description": "Your Telegram Bot Token from @BotFather",
+            "description": "You Telegram Bot Token from @BotFather",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash from my.telegram.org or @UseTGXBot",
+            "value": ""
+        },
+        "APP_ID": {
+            "description": "Your APP ID from my.telegram.org or @UseTGXBot",
             "value": ""
         },
         "API_KEY": {
-            "description": "http//www.omdbapi.com/apikey.aspx",
+            "description": "ID of Channel from which the bot should search files",
             "value": ""
         }
     },
@@ -33,5 +33,11 @@
         {
             "url": "heroku/python"
         }
-    ]
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
 }
